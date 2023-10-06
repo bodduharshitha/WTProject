@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon1.png">
+
+    
+    <!-- Optionally, you can also provide alternative sizes/icons for different devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon1.png">
+<title>Luna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    
+    /* Style the header */
+    .header {
+        padding: 80px;
+        text-align: center;
+        background-image: url(hd.jpg);
+        color: white;
+    }
+    
+    /* Increase the font size of the h1 element */
+    .header h1 {
+        font-size: 40px;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        background-color: #150c27;
+        background-image: linear-gradient(to right, black, #150c27);
+    }
+    
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    /* Right-aligned link */
+    .navbar a.right {
+        float: right;
+    }
+    
+    /* Change color on hover */
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .main {
+        background-image: linear-gradient(to bottom, black, #150c27);
+    }
+    
+    header {
+        background-image: url('aboutus1.jpg'); /* Replace 'space.jpg' with your space image */
+        background-size:100px 50px;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color:pink;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+    }
+    h2{
+      color: pink;
+      text-align: center;
+    }
+    .container {
+        padding: 2rem;
+    }
+    
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 97.2%;
+        animation: slide-up 0.5s ease;
+    }
+    
+    /* Keyframes for the animation */
+    @keyframes slide-up {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<body style="background-image: linear-gradient(to right, black, #150c27);" >
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Facts.html">Facts</a>
+        <a href="Highlights.html">Highlights</a>
+        <a href="community.html" class="right">Community</a>
+        <a href="#" class="right">About Us</a>
+    </div>
+    <header>
+        <h1>About Us</h1>
+        <p>We are a team of passionate space enthusiasts dedicated to exploring and understanding the mysteries of the cosmos.
+          Our attention to detail extends to the smallest aspects of our website, including the favicon. We've crafted a unique and recognizable icon that represents Luna. Keep an eye out for our favicon in your browser's tab—it's a small touch that reflects our dedication to making Luna a standout experience.
+        </p>
+    </header>
+
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p>At LUNA, we aim to inspire and educate people about the wonders of the universe. Our mission is to make space science accessible to all.
+          
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Luna.com. All rights reserved.</p>
+    </footer>
+</body>
+</html>

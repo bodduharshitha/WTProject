@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* Style the header */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-image: url(hd.jpg);
+    color: white;
+  }
+  
+  /* Increase the font size of the h1 element */
+  .header h1 {
+    font-size: 40px;
+  }
+  .navbar {
+      overflow:hidden;
+      background-color: #150c27;
+      background-image: linear-gradient(to right, black, #150c27);
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+    
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .main{
+        background-image: linear-gradient(to bottom, black, #150c27);
+    }
+    .images {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      flex-wrap: wrap;
+  }
+
+  .images img {
+      width: 30%;
+      border-radius: 10px;
+      margin: 1%;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);}
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .content {
+        background-color: whitesmoke;
+        color: black;
+        padding: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Gap between grid items */
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styles for content blocks */
+.content-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:white;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-item:hover .content-block {
+    opacity: 80%;
+}
+
+.content-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: Black;
+}
+
+.content-description {
+    font-size: 16px;
+    text-align: center;
+    color: Black;
+}
+.slider-container {
+  width: 1520px; /* Adjust the width as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styles for the slider images */
+.slider {
+  display: flex;
+  animation: slide 5s linear infinite; /* Auto-sliding animation */
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Animation keyframes for auto-sliding */
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-200%);
+  }
+  75% {
+      transform: translateX(-300%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+footer {
+  background-color: Black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 97.2%;
+  animation: slide-up 0.5s ease;
+}
+
+/* Keyframes for the animation */
+@keyframes slide-up {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
